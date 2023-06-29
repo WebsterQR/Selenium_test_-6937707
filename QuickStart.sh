@@ -13,7 +13,8 @@ if [[ $need_install=='YES' ]]
     *)        echo "unknown: $OSTYPE" ;;
   esac
 fi
-#pytest -p no:warnings --showlocals tests --alluredir=allurereports;
-#allure serve allurereports;
+pip install -r requirements.txt
+pytest -p no:warnings --showlocals tests --alluredir=allurereports;
+allure serve allurereports;
 
 #  brew install allure
