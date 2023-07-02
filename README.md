@@ -3,7 +3,7 @@ Make some checks in page https://www.globalsqa.com/angularJs-protractor/BankingP
 
 # How To start
 ## Bash using
-In terminal launch ./QuickStart.sh
+In terminal launch ./QuickStart.sh 
 Script will: 
 * check if allure has already installed and install it if necessary
 * install requirements from requirements.txt
