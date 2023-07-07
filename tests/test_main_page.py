@@ -2,6 +2,7 @@ from main_page import MainPage
 from login_page import LoginPage
 from functional_page import FunctionalPage
 
+
 def test_scenario(browser):
     link = "https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login"
     page = MainPage(browser, link)
@@ -16,6 +17,3 @@ def test_scenario(browser):
     functional_page.shoud_be_correct_balance(N)
     functional_page.withdrawl(N)
     functional_page.shoud_be_correct_balance(0)
-
-
-

@@ -1,10 +1,12 @@
-import time
-import warnings
+from allure_commons._allure import step
+
 from locators import MainPageLocators
 from selenium.common.exceptions import NoSuchElementException
 from base_page import BasePage
 
+
 class MainPage(BasePage):
+    @step("Проверка открытия страницы")
     def open(self):
         self.browser.get(self.url)
 

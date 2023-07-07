@@ -2,7 +2,6 @@ import pytest
 from selenium import webdriver
 
 
-#TODO Относительный путь до Chromedriver
 @pytest.fixture(scope="function")
 def browser():
     print("\nstart browser for test..")
